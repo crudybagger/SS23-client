@@ -7,7 +7,7 @@ import './stylesheets/App.css';
 const App = () => {
     return (
         <div className="App">
-            <Slider />
+            <Slider children={["","","","",""]} />
         </div>
     )
 }
