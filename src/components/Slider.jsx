@@ -36,17 +36,19 @@ export const Slider = ({children}) => {
 
     return (
         <div className="slider" ref={sliderRef}>
-            {
-                children.map((child, index) => {
-                    return (
-                        <div className="slider-item">
-                            <div className="card">
-                                {child || null}
+            <div className="slider-inner">
+                {
+                    children.map((child, index) => {
+                        return (
+                            <div className="slider-item">
+                                <div className="card">
+                                    {child || null}
+                                </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
         </div>
     );
 }
